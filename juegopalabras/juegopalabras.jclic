@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="juegopalabras" version="0.1.3">
+ <settings>
+  <title>JuegoPalabras</title>
+  <revision description="created" date="9/1/20" />
+  <descriptors />
+  <meta_langs>es</meta_langs>
+  <descriptions>
+   <description language="es" />
+  </descriptions>
+  <license type="by-nc-sa" url="https://creativecommons.org/licenses/by-nc-sa/4.0" />
+ </settings>
+ <sequence>
+  <item id="start" name="Sopa de Letras" />
+ </sequence>
+ <activities>
+  <activity class="@textGrid.WordSearch" name="Sopa de Letras" code="">
+   <description>
+    <p>Sopa de Letras, nombre de Animales</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Comic Sans MS" size="25" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Buscar nombre de Animales</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Comic Sans MS" size="25" />
+      <color foreground="0x0000CC" background="0xFFFFFF" />
+     </style>
+     <p>¡Ganaste! Felicitaciones</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Comic Sans MS" size="25" />
+      <color foreground="0xFF0000" background="0xFFFFFF" />
+     </style>
+     <p>¡Perdiste!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x000000">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <textGrid rows="12" columns="10" cellWidth="32.0" cellHeight="32.0" border="true">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0x00FFCC" />
+    </style>
+    <text>
+     <row>ABC*********</row>
+     <row>DEF*********</row>
+     <row>GHI*********</row>
+     <row>************</row>
+     <row>************</row>
+     <row>************</row>
+     <row>************</row>
+     <row>************</row>
+     <row>************</row>
+     <row>************</row>
+    </text>
+   </textGrid>
+   <clues>
+    <clue id="0">PERRO</clue>
+    <clue id="1">TORTUGA</clue>
+    <clue id="2">ZEBRA</clue>
+    <clue id="3">LEÓN</clue>
+    <clue id="4">ZORRO</clue>
+    <clue id="5">GATO</clue>
+    <clue id="6">TORO</clue>
+    <clue id="7">GATO</clue>
+    <clue id="8">CONEJO</clue>
+    <clue id="9">CABALLO</clue>
+    <clue id="10">COCODRILO</clue>
+    <clue id="11">ELEFANTE</clue>
+    <clue id="12">LOBO</clue>
+    <clue id="13">BALLENA</clue>
+   </clues>
+  </activity>
+ </activities>
+ <mediaBag />
+</JClicProject>
+

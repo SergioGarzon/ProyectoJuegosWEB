@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="frutasjuego" version="0.1.3">
+ <settings>
+  <title>FrutasJuego</title>
+  <revision description="created" date="9/1/20" />
+  <descriptors />
+  <meta_langs>es</meta_langs>
+  <descriptions>
+   <description language="es" />
+  </descriptions>
+  <license type="by-nc-sa" url="https://creativecommons.org/licenses/by-nc-sa/4.0" />
+ </settings>
+ <sequence>
+  <item id="start" name="JuegoMemoriaFrutas" />
+ </sequence>
+ <activities>
+  <activity class="@memory.MemoryGame" name="JuegoMemoriaFrutas" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <color foreground="0x0000CC" background="0x33FF00" />
+     </style>
+     <p>Realizado por Sergio Garzón</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Comic Sans MS" size="25" bold="true" />
+      <color foreground="0x000099" background="0xFFFF33" />
+     </style>
+     <p>Espero que te haya gustado :)</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Comic Sans MS" size="25" bold="true" />
+      <color foreground="0x000066" background="0xFF3333" />
+     </style>
+     <p>¡Incorrecto!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x0EB942">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x6666FF" border="true" />
+    <skin file="" />
+   </settings>
+   <cells rows="6" cols="5" cellWidth="80.0" cellHeight="60.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="5" rows="6" />
+    <cell image="naranja.png" />
+    <cell image="banana.png" />
+    <cell image="kiwi.png" />
+    <cell image="banana.png" />
+    <cell image="naranja.png" />
+    <cell image="manzana.png" />
+    <cell image="manzana.png" />
+    <cell image="kiwi.png" />
+    <cell image="pera.png" />
+    <cell image="pera.png" />
+    <cell image="uvas.png" />
+    <cell image="uvas.png" />
+    <cell image="frutilla.png" />
+    <cell image="banana.png" />
+    <cell image="uvas.png" />
+    <cell image="banana.png" />
+    <cell image="frutilla.png" />
+    <cell image="manzana.png" />
+    <cell image="manzana.png" />
+    <cell image="manzana.png" />
+    <cell image="naranja.png" />
+    <cell image="uvas.png" />
+    <cell image="frutilla.png" />
+    <cell image="banana.png" />
+    <cell image="uvas.png" />
+    <cell image="frutilla.png" />
+    <cell image="banana.png" />
+    <cell image="naranja.png" />
+    <cell image="uvas.png" />
+    <cell image="manzana.png" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="banana.png" file="banana.png" />
+  <media name="frutilla.png" file="frutilla.png" />
+  <media name="kiwi.png" file="kiwi.png" />
+  <media name="manzana.png" file="manzana.png" />
+  <media name="naranja.png" file="naranja.png" />
+  <media name="pera.png" file="pera.png" />
+  <media name="uvas.png" file="uvas.png" />
+ </mediaBag>
+</JClicProject>
+
